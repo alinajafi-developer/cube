@@ -1,0 +1,62 @@
+.borderBox, *, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main > .box {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotate3d(1, 1, -2, -160deg);
+  animation: anim 5s linear infinite;
+}
+main > .box > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+main > .box > div:nth-of-type(1) {
+  transform: translateZ(100px);
+  background-image: linear-gradient(90deg, rgba(157, 119, 163, 0.8431372549), rgba(244, 216, 151, 0.9058823529));
+}
+main > .box > div:nth-of-type(2) {
+  transform: translateZ(-100px);
+}
+main > .box > div:nth-of-type(3) {
+  transform-origin: top;
+  transform: rotateX(90deg) translateY(-100px);
+  background-image: linear-gradient(90deg, rgba(165, 163, 124, 0.8784313725), rgba(193, 153, 100, 0.9176470588));
+}
+main > .box > div:nth-of-type(4) {
+  transform-origin: right;
+  transform: rotateY(90deg) translateX(100px);
+  background-image: linear-gradient(90deg, rgba(189, 109, 213, 0.9098039216), rgba(91, 0, 56, 0.9333333333));
+}
+main > .box > div:nth-of-type(5) {
+  transform-origin: bottom;
+  transform: rotateY(-90deg) translateZ(100px);
+  background-image: linear-gradient(90deg, rgba(109, 213, 213, 0.9098039216), rgba(0, 91, 86, 0.9333333333));
+}
+main > .box > div:nth-of-type(6) {
+  transform-origin: bottom;
+  transform: rotateX(90deg) translateY(100px);
+  background-image: linear-gradient(90deg, rgba(109, 213, 126, 0.9098039216), rgba(0, 91, 83, 0.9333333333));
+}
+
+@keyframes anim {
+  to {
+    transform: rotate3d(1, 1, -2, -160deg) rotate(360deg);
+  }
+}/*# sourceMappingURL=master.css.map */

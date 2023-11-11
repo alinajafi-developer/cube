@@ -1,0 +1,84 @@
+.borderBox {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+
+    &::before,
+    &::after {
+        @extend .borderBox;
+    }
+
+    @extend .borderBox;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+    >.box {
+        width: 200px;
+        height: 200px;
+        // border: 3px solid red;
+        position: relative;
+        transform-style: preserve-3d;
+        transform: rotate3d(1, 1, -2, -160deg);
+        animation: anim 5s linear infinite;
+
+        >div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+
+            &:nth-of-type(1) {
+                transform: translateZ(100px);
+                background-image: linear-gradient(90deg, #9d77a3d7, #f4d897e7);
+            }
+
+            &:nth-of-type(2) {
+                transform: translateZ(-100px);
+            }
+
+            &:nth-of-type(3) {
+                transform-origin: top;
+                transform: rotateX(90deg) translateY(-100px);
+                background-image: linear-gradient(90deg, #a5a37ce0, #c19964ea);
+            }
+
+            &:nth-of-type(4) {
+                transform-origin: right;
+                transform: rotateY(90deg) translateX(100px);
+                background-image: linear-gradient(90deg, #bd6dd5e8, #5b0038ee);
+
+            }
+
+            &:nth-of-type(5) {
+                transform-origin: bottom;
+                transform: rotateY(-90deg) translateZ(100px);
+                background-image: linear-gradient(90deg, #6dd5d5e8, #005b56ee);
+            }
+
+            &:nth-of-type(6) {
+                transform-origin: bottom;
+                transform: rotateX(90deg) translateY(100px);
+                background-image: linear-gradient(90deg, #6dd57ee8, #005b53ee);
+
+            }
+        }
+
+    }
+}
+
+@keyframes anim {
+    to {
+        transform: rotate3d(1, 1, -2, -160deg) rotate(360deg);
+    }
+}
