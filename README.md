@@ -1,6 +1,6 @@
 # Cube
 
-![Rec 0001](https://github.com/alinajafiweb/cube/assets/147813870/b2062807-877c-4d48-9c44-6b9a1bbebd7c)
+![Rec 0001](https://github.com/alinajafi-developer/cube/assets/147813870/b2062807-877c-4d48-9c44-6b9a1bbebd7c)
 
 
 - [Demo Project](https://alinajafi-developer.github.io/cube/)
