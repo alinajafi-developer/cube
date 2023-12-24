@@ -3,9 +3,9 @@
 ![Rec 0001](https://github.com/alinajafiweb/cube/assets/147813870/b2062807-877c-4d48-9c44-6b9a1bbebd7c)
 
 
-- [Demo Project](https://alinajafiweb.github.io/cube/)
+- [Demo Project](https://alinajafi-developer.github.io/cube/)
 
-- Developed by Ali Afrouz
+- Developed by Ali Najafi
 
 - Created - 2023-11-11
 
@@ -15,4 +15,4 @@
 
 - Role - Frontend
 
-- How to reach me : with my [instagram](https://www.instagram.com/aliafrouz_com) and [linkedin](https://www.linkedin.com/in/aliafrouz/)
+- How to reach me : with my [instagram](https://www.instagram.com/alinajafi_developer) and [linkedin](https://www.linkedin.com/in/alinajafi-developer/)
